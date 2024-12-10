@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Sản Phẩm</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Danh Sách Sản Phẩm</h1>
+      <select id="filter" onchange="filterProducts()">
+        <option value="all">Tất cả sản phẩm</option>
+        <option value="Iphone">IPhone</option>
+        <option value="Samsung">Samsung</option>
+      </select>
+    </header>
+
+    <main class="main">
+      <section id="product-list" class="product-list"></section>
+      <aside class="cart">
+        <h2>Giỏ hàng</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tên</th>
+              <th>SL</th>
+              <th>Thành tiền</th>
+              <th>Xóa</th>
+            </tr>
+          </thead>
+          <tbody id="cart-list"></tbody>
+        </table>
+        <p id="total">Tổng tiền: 0 USD</p>
+        <button onclick="checkoutCart()">Thanh toán</button>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 - Website bán hàng</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
