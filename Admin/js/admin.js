@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goToUserBtn) {
     goToUserBtn.addEventListener("click", () => {
       // Chuyển về trang người dùng
-      window.location.href = "../Trang người dùng/index.html";
+      window.location.href = "../User/index.html";
     });
   }
 });

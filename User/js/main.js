@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (goToAdminBtn) {
     goToAdminBtn.addEventListener("click", () => {
       // Chuyển sang trang quản trị
-      window.location.href = "../Trang quản trị/admin.html";
+      window.location.href = "../Admin/admin.html";
     });
   }
 });
