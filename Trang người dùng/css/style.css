@@ -18,6 +18,20 @@ body {
   margin: 0;
   font-size: 1.5rem;
 }
+.header button {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header button:hover {
+  background-color: #3d8b40;
+  color: white;
+}
 .header select {
   padding: 5px;
   border-radius: 4px;
@@ -126,6 +140,10 @@ body {
   .header select {
     margin-top: 10px;
     width: 100%;
+  }
+  .header button {
+    width: 100%;
+    font-size: 1rem;
   }
   .main .product-list {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

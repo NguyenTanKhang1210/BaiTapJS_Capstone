@@ -13,6 +13,17 @@ async function fetchProducts() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const goToAdminBtn = document.getElementById("go-to-admin");
+
+  if (goToAdminBtn) {
+    goToAdminBtn.addEventListener("click", () => {
+      // Chuyển sang trang quản trị
+      window.location.href = "../Trang quản trị/admin.html";
+    });
+  }
+});
+
 // Hiển thị danh sách sản phẩm
 function renderProducts(products) {
   const productList = document.getElementById("product-list");
